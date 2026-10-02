@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELLE — Fine Jewelry & Swiss Watchmaking Atelier</title>
+  <meta name="description" content="AURELLE combines Swiss horological precision with bespoke fine jewelry craftsmanship. Contemporary luxury, timeless elegance.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <!-- Google Fonts CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Top Scroll Progress Indicator -->
+  <div class="page-progress-bar"></div>
+
+  <!-- GLOBAL NAVBAR -->
+  <nav class="navbar-aurelle" aria-label="Main Navigation">
+    <div class="container-fluid px-lg-5 px-4 d-flex align-items-center justify-content-between">
+      <!-- Brand Logo / Wordmark -->
+      <a href="index.html" class="brand-logo d-inline-flex align-items-center gap-2">
+        <svg class="brand-logo-icon" width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3L35 11.6603V28.3397L20 37L5 28.3397V11.6603L20 3Z" stroke="#C6A56B" stroke-width="1.8" fill="none"/>
+          <path d="M20 7L30 13V27L20 33L10 27V13L20 7Z" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+          <path d="M20 10L27 27H23.8L22 22H18L16.2 27H13L20 10ZM20 14.8L18.8 19.5H21.2L20 14.8Z" fill="currentColor"/>
+          <circle cx="20" cy="3" r="1.8" fill="#C6A56B"/>
+        </svg>
+        <span>AURELLE</span>
+      </a>
+
+      <!-- Desktop Navigation Links -->
+      <ul class="nav-links-desktop m-0 p-0">
+        <li><a href="index.html" class="nav-link-item active">Home</a></li>
+        <li><a href="about.html" class="nav-link-item">About</a></li>
+        <li><a href="collections.html" class="nav-link-item">Collections</a></li>
+        <li><a href="craftsmanship.html" class="nav-link-item">Craftsmanship</a></li>
+        <li><a href="workflow.html" class="nav-link-item">Workflow</a></li>
+      </ul>
+
+      <!-- Desktop Contact CTA Button -->
+      <div class="desktop-contact-btn">
+        <a href="contact.html" class="btn-aurelle-outline">Contact</a>
+      </div>
+
+      <!-- Mobile & Tablet Hamburger Toggle (< 992px) -->
+      <button class="mobile-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FULL SCREEN MOBILE & TABLET MENU OVERLAY -->
+  <div class="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="mobile-menu-header d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <svg class="brand-logo-icon" width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3L35 11.6603V28.3397L20 37L5 28.3397V11.6603L20 3Z" stroke="#C6A56B" stroke-width="1.8" fill="none"/>
+          <path d="M20 7L30 13V27L20 33L10 27V13L20 7Z" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+          <path d="M20 10L27 27H23.8L22 22H18L16.2 27H13L20 10ZM20 14.8L18.8 19.5H21.2L20 14.8Z" fill="currentColor"/>
+          <circle cx="20" cy="3" r="1.8" fill="#C6A56B"/>
+        </svg>
+        <span class="text-obsidian fw-bold font-serif" style="font-size: 1.15rem; letter-spacing: 0.18em;">AURELLE</span>
+      </div>
+      <button class="mobile-close-btn" aria-label="Close Menu">✕</button>
+    </div>
+
+    <ul class="mobile-menu-nav">
+      <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link active"><span class="menu-num">01</span> Home</a></li>
+      <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link"><span class="menu-num">02</span> About</a></li>
+      <li class="mobile-menu-item"><a href="collections.html" class="mobile-menu-link"><span class="menu-num">03</span> Collections</a></li>
+      <li class="mobile-menu-item"><a href="craftsmanship.html" class="mobile-menu-link"><span class="menu-num">04</span> Craftsmanship</a></li>
+      <li class="mobile-menu-item"><a href="workflow.html" class="mobile-menu-link"><span class="menu-num">05</span> Workflow Manager</a></li>
+      <li class="mobile-menu-item mt-3">
+        <a href="contact.html" class="btn-aurelle-dark w-100 text-center justify-content-center mobile-menu-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <main>
+    <!-- SECTION 01 — CINEMATIC HERO -->
+    <section class="hero-section">
+      <div class="hero-bg-container">
+        <img src="assets/images/hero_watch.jpg" alt="AURELLE Precision Swiss Wristwatch" class="hero-bg-img" loading="eager">
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="container hero-content">
+        <div class="row align-items-center">
+          <div class="col-lg-6 col-md-10">
+            <span class="section-label reveal-up">INDEPENDENT LUXURY · EST. 1987</span>
+            <h1 class="hero-title reveal-up">
+              <span class="hero-title-gradient">Time, Refined.</span>
+              <span class="hero-title-accent-line"></span>
+            </h1>
+            <p class="hero-subtitle lead-text reveal-up">
+              Exceptional mechanical timepieces and bespoke fine jewelry shaped by Swiss horological engineering, noble materials, and an enduring artistic vision.
+            </p>
+            <div class="hero-actions reveal-up">
+              <a href="collections.html" class="btn-aurelle-gold">Explore Collections</a>
+              <a href="craftsmanship.html" class="btn-aurelle-outline">Discover Our Craft</a>
+            </div>
+          </div>
+
+          <!-- Live Swiss Horological Working Clock (Hero Right Side) -->
+          <div class="col-lg-6 d-none d-lg-flex justify-content-center align-items-center reveal-up mt-4 mt-lg-0">
+            <div class="swiss-working-clock-wrapper">
+              <div class="clock-bezel-outer">
+                <div class="clock-bezel-inner">
+                  <div class="clock-face">
+                    <!-- Brand Marking -->
+                    <div class="clock-brand-mark">
+                      <div class="brand-name">AURELLE</div>
+                      <div class="brand-sub">CHRONOMETRE • ZURICH</div>
+                    </div>
+
+                    <!-- Hour Marks -->
+                    <div class="clock-dial-marks">
+                      <div class="dial-num" style="top: 10px; left: calc(50% - 15px);">XII</div>
+                      <div class="dial-num" style="top: calc(50% - 15px); right: 12px;">III</div>
+                      <div class="dial-num" style="bottom: 10px; left: calc(50% - 15px);">VI</div>
+                      <div class="dial-num" style="top: calc(50% - 15px); left: 12px;">IX</div>
+                    </div>
+
+                    <!-- Sub-dials -->
+                    <div class="clock-subdial chrono-left">
+                      <div class="subdial-hand"></div>
+                    </div>
+                    <div class="clock-subdial seconds-bottom">
+                      <div class="subdial-hand"></div>
+                    </div>
+
+                    <!-- Live Ticking Hands -->
+                    <div class="clock-hand hour-hand" id="live-hour-hand"></div>
+                    <div class="clock-hand minute-hand" id="live-minute-hand"></div>
+                    <div class="clock-hand second-hand" id="live-second-hand"></div>
+                    <div class="clock-center-cap"></div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Live Time Digital Badge -->
+              <div class="clock-digital-live-badge mt-4">
+                <span class="badge-dot"></span>
+                <span id="live-clock-time-display" class="live-time-str">--:--:-- --</span>
+                <span class="live-tz-str">· SWISS ATELIER LIVE TIME</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-indicator">
+        <div class="scroll-mouse"></div>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+    <!-- SECTION 02 — SIGNATURE COLLECTIONS -->
+    <section class="section-signature mobile-center-text">
+      <div class="container">
+        <div class="text-center mb-5 reveal-up">
+          <span class="section-label">THE COLLECTIONS</span>
+          <h2>Objects of Lasting Desire.</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Collection 1: The Meridian -->
+          <div class="col-lg-4 col-md-6 reveal-up">
+            <div class="collection-card">
+              <div class="collection-img-wrap">
+                <img src="assets/images/meridian_watch.jpg" alt="The Meridian Mechanical Watch" loading="lazy">
+              </div>
+              <div class="collection-info">
+                <span class="section-label">HAUTE HORLOGERIE</span>
+                <h3>The Meridian</h3>
+                <p>Mechanical watches featuring in-house automatic movements and hand-brushed rose gold casing.</p>
+                <a href="collections.html" class="link-gold">Explore Collection →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 2: Celeste -->
+          <div class="col-lg-4 col-md-6 reveal-up">
+            <div class="collection-card">
+              <div class="collection-img-wrap">
+                <img src="assets/images/celeste_jewelry.jpg" alt="Celeste Fine Jewelry" loading="lazy">
+              </div>
+              <div class="collection-info">
+                <span class="section-label">FINE JEWELRY</span>
+                <h3>Celeste Suite</h3>
+                <p>Sculptural gold rings and solitaire diamond necklaces created with invisible setting artistry.</p>
+                <a href="collections.html" class="link-gold">Explore Collection →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Collection 3: Nocturne -->
+          <div class="col-lg-4 col-md-12 reveal-up">
+            <div class="collection-card">
+              <div class="collection-img-wrap">
+                <img src="assets/images/nocturne_skeleton.jpg" alt="Nocturne Skeleton Timepiece" loading="lazy">
+              </div>
+              <div class="collection-info">
+                <span class="section-label">CONTEMPORARY</span>
+                <h3>Nocturne Skeleton</h3>
+                <p>Architectural skeleton timepieces crafted in matte obsidian titanium with champagne gold balance wheels.</p>
+                <a href="collections.html" class="link-gold">Explore Collection →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03 — THE ART OF TIME -->
+    <section class="section-art-of-time mobile-center-text">
+      <div class="split-vertical-line"></div>
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-up">
+            <div class="art-img-box">
+              <img src="assets/images/craftsmanship_spotlight.jpg" alt="Swiss Watch Movement Mechanical Detail" loading="lazy">
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-5 reveal-up">
+            <span class="section-label">ENGINEERED WITH INTENTION</span>
+            <h2>Every Second Has a Story.</h2>
+            <p class="lead-text my-4">
+              At AURELLE, watchmaking is an uncompromising discipline. Each mechanical movement is hand-assembled by master horologists, featuring hand-chamfered bridges, Geneva stripes, and custom-calibrated escapements designed to endure generations.
+            </p>
+            <div class="gold-line-anim mb-4"></div>
+            <a href="craftsmanship.html" class="btn-aurelle-dark">Explore Craftsmanship</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 04 — JEWELRY SPOTLIGHT -->
+    <section class="py-5 bg-warm-ivory mobile-center-text">
+      <div class="container py-lg-4">
+        <div class="text-center mb-5 reveal-up">
+          <span class="section-label">EDITORIAL SELECTION</span>
+          <h2 class="text-obsidian">Quietly Extraordinary.</h2>
+        </div>
+
+        <div class="row g-4">
+          <!-- Item 1: Ring -->
+          <div class="col-lg-4 col-md-6 reveal-up">
+            <div class="spotlight-card">
+              <div>
+                <div class="spotlight-img-holder">
+                  <img src="assets/images/celeste_jewelry.jpg" alt="Solitaire Diamond Ring" loading="lazy">
+                </div>
+                <h4>The Solenne Ring</h4>
+                <p>18K Champagne Gold set with a brilliant 2.5-carat D-flawless center stone.</p>
+              </div>
+              <div class="mt-4">
+                <a href="collections.html" class="link-gold">View Details →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Necklace -->
+          <div class="col-lg-4 col-md-6 reveal-up">
+            <div class="spotlight-card">
+              <div>
+                <div class="spotlight-img-holder">
+                  <img src="assets/images/solenne_necklace.jpg" alt="Sculptural Gold Necklace" loading="lazy">
+                </div>
+                <h4>Aurelia Pendant</h4>
+                <p>Fluid yellow gold links with delicate diamond pavé accents along the drop.</p>
+              </div>
+              <div class="mt-4">
+                <a href="collections.html" class="link-gold">View Details →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Earrings -->
+          <div class="col-lg-4 col-md-12 reveal-up">
+            <div class="spotlight-card">
+              <div>
+                <div class="spotlight-img-holder">
+                  <img src="assets/images/lumina_earrings.jpg" alt="Fine Gold Earrings" loading="lazy">
+                </div>
+                <h4>Celeste Earrings</h4>
+                <p>Minimalist gold drops framed with micro-set brilliant round cut diamonds.</p>
+              </div>
+              <div class="mt-4">
+                <a href="collections.html" class="link-gold">View Details →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05 — BESPOKE EXPERIENCE -->
+    <section class="py-5 bg-white border-top border-light mobile-center-text">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal-up text-center">
+            <span class="floating-gold-badge">PRIVATE CONSULTATION</span>
+            <h2 class="text-obsidian mb-4">Made Personal. Made to Last.</h2>
+            <p class="lead-text text-muted-custom mb-5 mx-auto" style="max-width: 640px;">
+              Collaborate directly with our master watchmakers and jewelry artisans to bring unique bespoke commissions, custom engravings, and personalized heirlooms to life.
+            </p>
+            <a href="contact.html" class="btn-aurelle-dark">Begin Your Consultation →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 06 — PROJECT & WORKFLOW PREVIEW -->
+    <section class="section-workflow-preview mobile-center-text">
+      <div class="container">
+        <div class="text-center mb-5 reveal-up">
+          <span class="section-label">TRANSPARENT ARTISANSHIP</span>
+          <h2>Craftsmanship, Thoughtfully Orchestrated.</h2>
+          <p class="lead-text mx-auto" style="max-width: 600px;">
+            Every bespoke AURELLE commission is tracked in real-time through our client workflow management portal, ensuring total confidence from initial sketch to final presentation.
+          </p>
+        </div>
+
+        <div class="workflow-preview-container reveal-up">
+          <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 pb-3 border-bottom border-light">
+            <div>
+              <span class="section-label mb-1">CLIENT COMMISSION REF</span>
+              <h4 class="m-0">AUR-024 — Custom Engagement Ring</h4>
+            </div>
+            <span class="status-badge in-progress">Crafting In Progress</span>
+          </div>
+
+          <!-- Timeline -->
+          <div class="workflow-stage-timeline">
+            <div class="workflow-progress-line"></div>
+            
+            <div class="timeline-step completed">
+              <div class="step-node">01</div>
+              <div>
+                <div class="step-title">Consultation</div>
+                <div class="step-status">Completed</div>
+              </div>
+            </div>
+
+            <div class="timeline-step completed">
+              <div class="step-node">02</div>
+              <div>
+                <div class="step-title">Design Approval</div>
+                <div class="step-status">Completed</div>
+              </div>
+            </div>
+
+            <div class="timeline-step active">
+              <div class="step-node">03</div>
+              <div>
+                <div class="step-title">Crafting</div>
+                <div class="step-status">72% Finished</div>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="step-node">04</div>
+              <div>
+                <div class="step-title">Inspection</div>
+                <div class="step-status">Pending</div>
+              </div>
+            </div>
+
+            <div class="timeline-step">
+              <div class="step-node">05</div>
+              <div>
+                <div class="step-title">Presentation</div>
+                <div class="step-status">Scheduled</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-4">
+            <a href="workflow.html" class="btn-aurelle-dark">Explore Full Workflow Manager</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 07 — FINAL BRAND STATEMENT & FOOTER -->
+    <section class="bg-warm-ivory text-obsidian text-center py-5 border-top border-light">
+      <div class="container py-4 reveal-up">
+        <span class="section-label">AURELLE ATELIER</span>
+        <h2 class="text-obsidian mb-3">Designed for the Moments That Matter.</h2>
+        <p class="lead-text text-muted-custom mx-auto mb-4" style="max-width: 600px;">
+          Discover enduring design, exceptional materials, and horological craftsmanship that transcends generations.
+        </p>
+        <a href="collections.html" class="btn-aurelle-dark">Discover AURELLE →</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer-aurelle">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand-title d-inline-flex align-items-center gap-2">
+            <svg class="brand-logo-icon" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 3L35 11.6603V28.3397L20 37L5 28.3397V11.6603L20 3Z" stroke="#C6A56B" stroke-width="1.8" fill="none"/>
+              <path d="M20 7L30 13V27L20 33L10 27V13L20 7Z" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+              <path d="M20 10L27 27H23.8L22 22H18L16.2 27H13L20 10ZM20 14.8L18.8 19.5H21.2L20 14.8Z" fill="currentColor"/>
+              <circle cx="20" cy="3" r="1.8" fill="#C6A56B"/>
+            </svg>
+            <span>AURELLE</span>
+          </div>
+          <div class="footer-tagline">Precision in Every Moment.</div>
+          <p class="text-muted-custom small mb-3" style="max-width: 320px;">
+            An independent luxury maison dedicated to fine jewelry and Swiss mechanical timepieces crafted in Zurich & Geneva.
+          </p>
+          <div class="footer-social-bar d-flex align-items-center gap-2 mt-3">
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon" title="Instagram" aria-label="Instagram">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" class="footer-social-icon" title="Pinterest" aria-label="Pinterest">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/" target="_blank" class="footer-social-icon" title="WhatsApp Concierge" aria-label="WhatsApp">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="footer-social-icon" title="Atelier Films" aria-label="YouTube">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links p-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Maison</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-heading">Services & Portal</div>
+          <ul class="footer-links p-0">
+            <li><a href="workflow.html">Workflow Manager</a></li>
+            <li><a href="contact.html">Bespoke Commissions</a></li>
+            <li><a href="contact.html">Private Appointments</a></li>
+            <li><a href="workflow.html">Client Dossier Vault</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-heading">Private Inquiries</div>
+          <p class="text-muted-custom small mb-1"><strong>Zurich Atelier:</strong> Bahnhofstrasse 42</p>
+          <p class="text-muted-custom small mb-1"><strong>Geneva Salon:</strong> Rue du Rhône 18</p>
+          <p class="text-muted-custom small mb-2"><strong>Tel:</strong> <a href="tel:+41442118800" class="text-obsidian text-decoration-none">+41 (0)44 211 88 00</a></p>
+          <a href="mailto:concierge@aurelle-atelier.com" class="link-gold small fw-bold d-inline-block mt-1">concierge@aurelle-atelier.com</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 AURELLE Maison Horlogère & Joaillerie. All rights reserved.</div>
+        <div class="d-flex gap-3 align-items-center flex-wrap">
+          <span class="text-muted-custom small">🇨🇭 Swiss Federal Assay Certified</span>
+          <a href="contact.html" class="text-muted-custom small text-decoration-none">Privacy & Legal</a>
+          <a href="workflow.html" class="text-muted-custom small text-decoration-none">Client Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Master JavaScript File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</body>
+</html>

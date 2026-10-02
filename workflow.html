@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Workflow Manager — AURELLE Bespoke Commission Portal</title>
+  <meta name="description" content="Track your custom AURELLE fine jewelry or Swiss watch commission in real time from sketch to final presentation.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <div class="page-progress-bar"></div>
+
+  <!-- GLOBAL NAVBAR (Light page mode) -->
+  <nav class="navbar-aurelle navbar-light-page" aria-label="Main Navigation">
+    <div class="container-fluid px-lg-5 px-4 d-flex align-items-center justify-content-between">
+      <a href="index.html" class="brand-logo d-inline-flex align-items-center gap-2">
+        <svg class="brand-logo-icon" width="32" height="32" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3L35 11.6603V28.3397L20 37L5 28.3397V11.6603L20 3Z" stroke="#C6A56B" stroke-width="1.8" fill="none"/>
+          <path d="M20 7L30 13V27L20 33L10 27V13L20 7Z" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+          <path d="M20 10L27 27H23.8L22 22H18L16.2 27H13L20 10ZM20 14.8L18.8 19.5H21.2L20 14.8Z" fill="currentColor"/>
+          <circle cx="20" cy="3" r="1.8" fill="#C6A56B"/>
+        </svg>
+        <span>AURELLE</span>
+      </a>
+
+      <ul class="nav-links-desktop m-0 p-0">
+        <li><a href="index.html" class="nav-link-item">Home</a></li>
+        <li><a href="about.html" class="nav-link-item">About</a></li>
+        <li><a href="collections.html" class="nav-link-item">Collections</a></li>
+        <li><a href="craftsmanship.html" class="nav-link-item">Craftsmanship</a></li>
+        <li><a href="workflow.html" class="nav-link-item active">Workflow</a></li>
+      </ul>
+
+      <div class="desktop-contact-btn">
+        <a href="contact.html" class="btn-aurelle-dark">Contact</a>
+      </div>
+
+      <button class="mobile-toggle-btn" aria-label="Toggle Navigation Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- FULL SCREEN MOBILE MENU OVERLAY -->
+  <div class="mobile-menu-overlay" role="dialog" aria-modal="true" aria-label="Mobile Navigation Menu">
+    <div class="mobile-menu-header d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center gap-2">
+        <svg class="brand-logo-icon" width="28" height="28" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 3L35 11.6603V28.3397L20 37L5 28.3397V11.6603L20 3Z" stroke="#C6A56B" stroke-width="1.8" fill="none"/>
+          <path d="M20 7L30 13V27L20 33L10 27V13L20 7Z" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+          <path d="M20 10L27 27H23.8L22 22H18L16.2 27H13L20 10ZM20 14.8L18.8 19.5H21.2L20 14.8Z" fill="currentColor"/>
+          <circle cx="20" cy="3" r="1.8" fill="#C6A56B"/>
+        </svg>
+        <span class="text-obsidian fw-bold font-serif" style="font-size: 1.15rem; letter-spacing: 0.18em;">AURELLE</span>
+      </div>
+      <button class="mobile-close-btn" aria-label="Close Menu">✕</button>
+    </div>
+
+    <ul class="mobile-menu-nav">
+      <li class="mobile-menu-item"><a href="index.html" class="mobile-menu-link"><span class="menu-num">01</span> Home</a></li>
+      <li class="mobile-menu-item"><a href="about.html" class="mobile-menu-link"><span class="menu-num">02</span> About</a></li>
+      <li class="mobile-menu-item"><a href="collections.html" class="mobile-menu-link"><span class="menu-num">03</span> Collections</a></li>
+      <li class="mobile-menu-item"><a href="craftsmanship.html" class="mobile-menu-link"><span class="menu-num">04</span> Craftsmanship</a></li>
+      <li class="mobile-menu-item"><a href="workflow.html" class="mobile-menu-link active"><span class="menu-num">05</span> Workflow Manager</a></li>
+      <li class="mobile-menu-item mt-3">
+        <a href="contact.html" class="btn-aurelle-dark w-100 text-center justify-content-center mobile-menu-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+
+  <main style="padding-top: 5rem;">
+    <!-- SECTION 01 — WORKFLOW HERO -->
+    <section class="py-5 bg-warm-ivory text-center mobile-center-text">
+      <div class="container py-lg-5 reveal-up">
+        <span class="section-label">CLIENT COMMISSION PORTAL</span>
+        <h1>From First Sketch to Final Reveal.</h1>
+        <p class="lead-text mx-auto mt-3" style="max-width: 650px;">
+          Follow your bespoke fine jewelry or horological commission through consultation, CAD approval, gold casting, gem setting, and final presentation.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECTION 02 — PROJECT OVERVIEW STATS -->
+    <section class="py-4 bg-white border-top border-bottom border-light mobile-center-text">
+      <div class="container">
+        <div class="row g-4 text-center">
+          <div class="col-lg-3 col-6 reveal-up">
+            <div class="stat-box">
+              <div class="stat-number">08</div>
+              <div class="stat-label">Active Atelier Projects</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 reveal-up">
+            <div class="stat-box">
+              <div class="stat-number">03</div>
+              <div class="stat-label">Awaiting Client Approval</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 reveal-up">
+            <div class="stat-box">
+              <div class="stat-number">04</div>
+              <div class="stat-label">In Craftsmanship Phase</div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 reveal-up">
+            <div class="stat-box">
+              <div class="stat-number">01</div>
+              <div class="stat-label">Ready For Presentation</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03 & 04 — LUXURY BESPOKE CLIENT DASHBOARD PORTAL -->
+    <section class="py-5 bg-warm-ivory mobile-center-text">
+      <div class="container py-lg-4">
+        <div class="text-center mb-4 reveal-up">
+          <span class="section-label">CLIENT COMMISSION PORTAL</span>
+          <h2>Live Atelier Status & Workflow Tracker.</h2>
+          <p class="lead-text mx-auto mt-2" style="max-width: 650px;">
+            Monitor real-time crafting progress, bench specs, optical certifications, and direct artisan communications for your bespoke commission.
+          </p>
+        </div>
+
+        <!-- Project Selector Tabs -->
+        <div class="d-flex justify-content-center gap-3 mb-5 flex-wrap reveal-up">
+          <button class="project-selector-btn active" data-project="AUR-024">
+            <span class="d-block text-gold small text-uppercase fw-bold mb-1" style="font-size:0.65rem; letter-spacing:0.12em;">Engagement Ring</span>
+            AUR-024 — Victoria S.
+          </button>
+          <button class="project-selector-btn" data-project="AUR-019">
+            <span class="d-block text-gold small text-uppercase fw-bold mb-1" style="font-size:0.65rem; letter-spacing:0.12em;">Swiss Chronograph</span>
+            AUR-019 — Alexander M.
+          </button>
+          <button class="project-selector-btn" data-project="AUR-031">
+            <span class="d-block text-gold small text-uppercase fw-bold mb-1" style="font-size:0.65rem; letter-spacing:0.12em;">High Jewelry Suite</span>
+            AUR-031 — Elena R.
+          </button>
+        </div>
+
+        <!-- MAIN PORTAL DASHBOARD CARD (Dark Obsidian Luxury Theme) -->
+        <div class="workflow-portal-card reveal-up">
+          <!-- Top Header Bar -->
+          <div class="row align-items-center pb-3 mb-4 border-bottom border-light g-3">
+            <div class="col-lg-7">
+              <div class="d-flex align-items-center gap-3 flex-wrap">
+                <span class="section-label mb-0" style="font-size: 0.7rem;">COMMISSION REF: <span id="wf-ref-spec">CHRONO-AUR-024</span></span>
+                <span class="badge bg-warm-ivory text-gold border border-gold px-3 py-2" style="font-size: 0.75rem; letter-spacing: 0.15em;">ATELIER BENCH #04</span>
+              </div>
+              <h3 id="wf-proj-title" class="m-0 text-obsidian font-serif mt-2">AUR-024 — Bespoke Engagement Ring</h3>
+            </div>
+            <div class="col-lg-5 text-lg-end d-flex align-items-center justify-content-lg-end gap-3 flex-wrap">
+              <span id="wf-stage" class="status-badge in-progress px-3 py-2" style="font-size: 0.75rem;">Crafting in Progress</span>
+              <button class="btn-aurelle-dark btn-sm py-2" onclick="alert('Concierge update request sent. Your master specialist will respond within 2 hours.')">Request Update</button>
+            </div>
+          </div>
+
+          <!-- 2-Column Split Dashboard Body -->
+          <div class="row g-4">
+            <!-- Left Column: Product Image & Spec Sheet -->
+            <div class="col-lg-5">
+              <div class="portal-img-container mb-3">
+                <img id="wf-proj-img" src="assets/images/celeste_jewelry.jpg" alt="Bespoke Product Preview" loading="lazy">
+                <span class="portal-live-badge"><span class="badge-dot"></span> LIVE ATELIER BENCH</span>
+              </div>
+
+              <div class="spec-list mb-3">
+                <div class="spec-row">
+                  <span class="spec-label">Metal Alloy:</span>
+                  <span id="wf-metal-spec" class="spec-value text-obsidian">18K Champagne Gold</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Gemstones:</span>
+                  <span id="wf-gem-spec" class="spec-value text-obsidian">2.45ct D-IF Oval Solitaire</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Atelier Bench:</span>
+                  <span id="wf-bench-spec" class="spec-value text-obsidian">Zurich Atelier (Bench #4)</span>
+                </div>
+                <div class="spec-row">
+                  <span class="spec-label">Assigned Specialist:</span>
+                  <span id="wf-specialist" class="spec-value text-obsidian">Henrik Vane (Master Jeweler)</span>
+                </div>
+              </div>
+
+              <!-- Action Dossier Buttons -->
+              <div class="d-flex gap-2">
+                <button class="btn-aurelle-dark w-100 text-center justify-content-center py-2" style="font-size: 0.7rem;" onclick="alert('Downloading Certificate of Authenticity & Inspection Spec Sheet (PDF)...')">
+                  📥 Spec Dossier PDF
+                </button>
+                <a href="contact.html" class="btn-aurelle-gold w-100 text-center justify-content-center py-2" style="font-size: 0.7rem;">
+                  💬 Master Artisan
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Client Meta, Progress Bar & Activity Feed -->
+            <div class="col-lg-7 d-flex flex-column justify-content-between">
+              <div>
+                <!-- Client Meta Box -->
+                <div class="row g-3 mb-4 p-3 bg-warm-ivory border border-gold-subtle rounded text-start shadow-sm">
+                  <div class="col-sm-4">
+                    <div class="small text-muted-custom text-uppercase">Client Reference</div>
+                    <div id="wf-client-name" class="fw-bold text-obsidian">Victoria S.</div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="small text-muted-custom text-uppercase">Target Presentation</div>
+                    <div id="wf-target-date" class="fw-bold text-obsidian">October 24, 2026</div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="small text-muted-custom text-uppercase">Vault Status</div>
+                    <div class="fw-bold text-gold">Zurich Vault 3B</div>
+                  </div>
+                </div>
+
+                <!-- Overall Progress Status -->
+                <div class="mb-4">
+                  <div class="d-flex justify-content-between align-items-center mb-2">
+                    <span class="small font-weight-bold text-uppercase text-obsidian" style="letter-spacing:0.12em;">Overall Completion Progress</span>
+                    <span id="wf-progress-pct" class="h4 text-gold mb-0 font-serif">72%</span>
+                  </div>
+                  <div class="progress" style="height: 8px; background-color: rgba(16,16,16,0.06); border: 1px solid rgba(198,165,107,0.3);">
+                    <div id="wf-progress-line" class="progress-bar" role="progressbar" style="width: 72%; background: linear-gradient(90deg, #A58349, #C6A56B, #DFCA9B); transition: width 0.6s ease;"></div>
+                  </div>
+                </div>
+
+                <!-- Stage Timeline Indicator -->
+                <div class="row text-center g-2 mb-4 py-3 border-top border-bottom border-light" style="background: rgba(249,246,240,0.5);">
+                  <div class="col-4 col-md-2">
+                    <div class="small text-uppercase text-gold fw-bold" style="font-size:0.65rem;">01. Consult</div>
+                    <div class="text-success small">✓ Done</div>
+                  </div>
+                  <div class="col-4 col-md-2">
+                    <div class="small text-uppercase text-gold fw-bold" style="font-size:0.65rem;">02. CAD 3D</div>
+                    <div class="text-success small">✓ Done</div>
+                  </div>
+                  <div class="col-4 col-md-2">
+                    <div class="small text-uppercase text-gold fw-bold" style="font-size:0.65rem;">03. Casting</div>
+                    <div class="text-warning small">★ Active</div>
+                  </div>
+                  <div class="col-4 col-md-2">
+                    <div class="small text-uppercase text-muted-custom" style="font-size:0.65rem;">04. Setting</div>
+                    <div class="text-muted-custom small">Pending</div>
+                  </div>
+                  <div class="col-4 col-md-2">
+                    <div class="small text-uppercase text-muted-custom" style="font-size:0.65rem;">05. Polish</div>
+                    <div class="text-muted-custom small">Pending</div>
+                  </div>
+                  <div class="col-4 col-md-2">
+                    <div class="small text-uppercase text-muted-custom" style="font-size:0.65rem;">06. Final QC</div>
+                    <div class="text-muted-custom small">Pending</div>
+                  </div>
+                </div>
+
+                <!-- Activity Feed -->
+                <div class="portal-activity-section mb-4">
+                  <h5 class="text-obsidian mb-3 border-bottom border-light pb-2">Chronological Atelier Milestones</h5>
+                  <div id="wf-activity-feed">
+                    <div class="d-flex gap-3 align-items-start mb-3 pb-3 border-bottom border-light">
+                      <span class="badge bg-warm-ivory border border-gold text-obsidian fw-bold p-2" style="font-size:0.7rem;">Oct 01, 2026</span>
+                      <div>
+                        <p class="mb-1 text-obsidian fw-semibold" style="font-size:0.875rem;">18K Champagne gold casting completed and hand-inspected.</p>
+                        <span class="text-muted-custom small">Inspected by Senior Jeweler Henrik Vane · Purity: 750 Gold Stamp Passed.</span>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start mb-3 pb-3 border-bottom border-light">
+                      <span class="badge bg-warm-ivory border border-gold text-obsidian fw-bold p-2" style="font-size:0.7rem;">Sep 24, 2026</span>
+                      <div>
+                        <p class="mb-1 text-obsidian fw-semibold" style="font-size:0.875rem;">Client approved 3D CAD render and central solitaire stone selection.</p>
+                        <span class="text-muted-custom small">GIA Certificate #64829104 locked for mounting assembly.</span>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-3 align-items-start mb-3 pb-3 border-bottom border-light">
+                      <span class="badge bg-warm-ivory border border-gold text-obsidian fw-bold p-2" style="font-size:0.7rem;">Sep 18, 2026</span>
+                      <div>
+                        <p class="mb-1 text-obsidian fw-semibold" style="font-size:0.875rem;">Initial private design consultation held in Zurich Atelier.</p>
+                        <span class="text-muted-custom small">Custom hand-sketch approved by client Victoria S.</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Artisan Message Note -->
+              <div class="p-3 border border-gold-subtle rounded-0" style="background: rgba(198, 165, 107, 0.08);">
+                <div class="d-flex align-items-center gap-2 mb-1">
+                  <span class="badge-dot"></span>
+                  <span class="text-uppercase small text-gold fw-bold" style="letter-spacing: 0.15em;">Direct Note from Master Craftsman</span>
+                </div>
+                <p id="wf-artisan-note" class="small text-obsidian fst-italic m-0">
+                  "The 18K champagne gold alloy has been poured and density verified. Next step is precision hand-setting of the solitaire diamond halo."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 ATELIER GUARANTEE / METRIC CARDS (Below Portal) -->
+        <div class="row g-4 mt-4 reveal-up">
+          <div class="col-lg-4">
+            <div class="stat-box h-100 text-start">
+              <span class="section-label mb-1">VAULT & TRANSIT</span>
+              <h4 class="h5 mb-2">Armored Security Vault</h4>
+              <p class="small text-muted-custom mb-0">
+                Fully insured under Lloyd's of London with GPS-tracked armored transit for final presentation delivery.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="stat-box h-100 text-start">
+              <span class="section-label mb-1">CERTIFICATION</span>
+              <h4 class="h5 mb-2">Dual Hallmark & GIA</h4>
+              <p class="small text-muted-custom mb-0">
+                Accompanied by laser-engraved serial codes, official Swiss Federal Assay Office stamps, and digital provenance vault records.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="stat-box h-100 text-start">
+              <span class="section-label mb-1">ATELIER GUARANTEE</span>
+              <h4 class="h5 mb-2">Lifetime Care & Servicing</h4>
+              <p class="small text-muted-custom mb-0">
+                Includes complimentary annual ultrasonic cleaning, prong inspection, and precision movement re-calibration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 06 — REQUEST A BESPOKE PROJECT FORM -->
+    <section class="py-5 bg-white border-top border-light mobile-center-text">
+      <div class="container py-lg-4">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 reveal-up">
+            <div class="text-center mb-5">
+              <span class="section-label">COMMISSION INITIATION</span>
+              <h2>Initiate a Bespoke Project.</h2>
+              <p class="lead-text">
+                Submit details regarding your vision. Our atelier concierge will review your requirements and respond within 24 hours.
+              </p>
+            </div>
+
+            <div class="form-container">
+              <form class="form-aurelle-validate">
+                <div class="row g-3">
+                  <div class="col-md-6 form-group-aurelle">
+                    <label class="form-label-aurelle">Commission Type *</label>
+                    <select class="form-control-aurelle" required>
+                      <option value="">Select Commission Type</option>
+                      <option value="watch">Bespoke Mechanical Timepiece</option>
+                      <option value="ring">Custom Engagement / Fine Ring</option>
+                      <option value="suite">High Jewelry Suite</option>
+                      <option value="engraving">Horological Engraving</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6 form-group-aurelle">
+                    <label class="form-label-aurelle">Preferred Metal / Material *</label>
+                    <select class="form-control-aurelle" required>
+                      <option value="">Select Material</option>
+                      <option value="champagne-gold">18K Champagne Gold</option>
+                      <option value="rose-gold">18K Rose Gold</option>
+                      <option value="titanium">Titanium & Black DLC</option>
+                      <option value="platinum">950 Platinum</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6 form-group-aurelle">
+                    <label class="form-label-aurelle">Estimated Budget Range *</label>
+                    <select class="form-control-aurelle" required>
+                      <option value="">Select Budget</option>
+                      <option value="b1">$15,000 – $25,000 USD</option>
+                      <option value="b2">$25,000 – $50,000 USD</option>
+                      <option value="b3">$50,000 – $100,000+ USD</option>
+                    </select>
+                  </div>
+
+                  <div class="col-md-6 form-group-aurelle">
+                    <label class="form-label-aurelle">Contact Email *</label>
+                    <input type="email" class="form-control-aurelle" placeholder="name@example.com" required>
+                  </div>
+
+                  <div class="col-12 form-group-aurelle">
+                    <label class="form-label-aurelle">Project Vision & Details *</label>
+                    <textarea class="form-control-aurelle" rows="4" placeholder="Describe your design inspirations, gemstone preferences, or timing requirements..." required></textarea>
+                  </div>
+
+                  <div class="col-12 text-center mt-3">
+                    <button type="submit" class="btn-aurelle-gold">Submit Project Request</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="footer-aurelle">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-4 col-md-6">
+          <div class="footer-brand-title d-inline-flex align-items-center gap-2">
+            <svg class="brand-logo-icon" width="34" height="34" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 3L35 11.6603V28.3397L20 37L5 28.3397V11.6603L20 3Z" stroke="#C6A56B" stroke-width="1.8" fill="none"/>
+              <path d="M20 7L30 13V27L20 33L10 27V13L20 7Z" stroke="currentColor" stroke-width="1" stroke-dasharray="2 2" fill="none" opacity="0.6"/>
+              <path d="M20 10L27 27H23.8L22 22H18L16.2 27H13L20 10ZM20 14.8L18.8 19.5H21.2L20 14.8Z" fill="currentColor"/>
+              <circle cx="20" cy="3" r="1.8" fill="#C6A56B"/>
+            </svg>
+            <span>AURELLE</span>
+          </div>
+          <div class="footer-tagline">Precision in Every Moment.</div>
+          <p class="text-muted-custom small mb-3" style="max-width: 320px;">
+            An independent luxury maison dedicated to fine jewelry and Swiss mechanical timepieces crafted in Zurich & Geneva.
+          </p>
+          <div class="footer-social-bar d-flex align-items-center gap-2 mt-3">
+            <a href="https://instagram.com" target="_blank" class="footer-social-icon" title="Instagram" aria-label="Instagram">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="https://pinterest.com" target="_blank" class="footer-social-icon" title="Pinterest" aria-label="Pinterest">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.372-12 12 0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.293 1.199-.334 1.363-.053.225-.172.271-.401.165-1.495-.69-2.433-2.878-2.433-4.646 0-3.776 2.748-7.252 7.92-7.252 4.158 0 7.392 2.967 7.392 6.923 0 4.135-2.607 7.462-6.233 7.462-1.214 0-2.354-.629-2.758-1.379l-.749 2.848c-.269 1.045-1.004 2.352-1.498 3.146 1.123.345 2.306.535 3.55.535 6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            </a>
+            <a href="https://wa.me/" target="_blank" class="footer-social-icon" title="WhatsApp Concierge" aria-label="WhatsApp">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            </a>
+            <a href="https://youtube.com" target="_blank" class="footer-social-icon" title="Atelier Films" aria-label="YouTube">
+              <svg width="15" height="15" fill="currentColor" viewBox="0 0 24 24"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6">
+          <div class="footer-heading">Explore</div>
+          <ul class="footer-links p-0">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Maison</a></li>
+            <li><a href="collections.html">Collections</a></li>
+            <li><a href="craftsmanship.html">Craftsmanship</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-heading">Services & Portal</div>
+          <ul class="footer-links p-0">
+            <li><a href="workflow.html">Workflow Manager</a></li>
+            <li><a href="contact.html">Bespoke Commissions</a></li>
+            <li><a href="contact.html">Private Appointments</a></li>
+            <li><a href="workflow.html">Client Dossier Vault</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <div class="footer-heading">Private Inquiries</div>
+          <p class="text-muted-custom small mb-1"><strong>Zurich Atelier:</strong> Bahnhofstrasse 42</p>
+          <p class="text-muted-custom small mb-1"><strong>Geneva Salon:</strong> Rue du Rhône 18</p>
+          <p class="text-muted-custom small mb-2"><strong>Tel:</strong> <a href="tel:+41442118800" class="text-obsidian text-decoration-none">+41 (0)44 211 88 00</a></p>
+          <a href="mailto:concierge@aurelle-atelier.com" class="link-gold small fw-bold d-inline-block mt-1">concierge@aurelle-atelier.com</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 AURELLE Maison Horlogère & Joaillerie. All rights reserved.</div>
+        <div class="d-flex gap-3 align-items-center flex-wrap">
+          <span class="text-muted-custom small">🇨🇭 Swiss Federal Assay Certified</span>
+          <a href="contact.html" class="text-muted-custom small text-decoration-none">Privacy & Legal</a>
+          <a href="workflow.html" class="text-muted-custom small text-decoration-none">Client Portal</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Floating Back to Top Button -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Back to Top">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+</body>
+</html>
