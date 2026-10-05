@@ -555,7 +555,7 @@ h4 {
   font-weight: 600;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .nav-links-desktop, .desktop-contact-btn {
     display: none !important;
   }
@@ -2608,8 +2608,16 @@ body.menu-open {
 }
 
 /* Contact Page Social & Map Styles */
+.contact-social-btn .social-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}
+
 .contact-social-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   font-size: 0.72rem;
   font-weight: 600;
   letter-spacing: 0.08em;
